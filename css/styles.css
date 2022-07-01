@@ -1,10 +1,84 @@
-@font-face {
-    font-family: 'exo_2.0light';
-    src: url('../fonts/exo2.0-light-webfont.eot');
-    src: url('../fonts/exo2.0-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/exo2.0-light-webfont.woff2') format('woff2'), url('../fonts/exo2.0-light-webfont.woff') format('woff'), url('../fonts/exo2.0-light-webfont.ttf') format('truetype'), url('../fonts/exo2.0-light-webfont.svg#exo_2.0light') format('svg');
-    font-weight: normal;
-    font-style: normal
-}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  /* GLOBAL STYLES
+  --------------------------------------------- */
+  /* Padding below the footer and lighter body text */
+
+
+
+
+
+  /* MARKETING CONTENT
+-------------------------------------------------- */
+
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .marketing h2 {
+    font-weight: 400;
+  }
+
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+
+  /* Featurettes
+------------------------- */
+
+  .featurette-divider {
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
+  }
+
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+
+
+  /* RESPONSIVE CSS
+-------------------------------------------------- */
+
+  @media (min-width: 40em) {
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
 
 html {
     position: relative;
@@ -12,11 +86,12 @@ html {
 }
 
 body {
-    font: 300 16px/22px 'exo_2.0light', sans-serif;
-    color: #6e6d6d;
-    background-color: #ffffff;
-    padding-top: 50px
+    color: #5a5a5a;
+    background-color: #000;    
+
+
 }
+
 
 h1,
 h2,
@@ -55,6 +130,17 @@ section.boottom {
     padding-bottom: 60px
 }
 
+.margenes{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.sub-margenes{
+
+    padding: 20px;
+    
+}
+
 .btn-default {
     color: #fff;
     background-color: #ed1c24;
@@ -71,6 +157,40 @@ section.boottom {
     background-color: #ff1e27
 }
 
+
+#game {
+    width: 500px;
+    height: 500px;
+    position: fixed;
+}
+#banner{
+
+    color: #fff;
+    padding: 60px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: #1C6EA4;
+    background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 48%, #090B75 100%);
+    background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 48%, #090B75 100%);
+    background: linear-gradient(to right, #1C6EA4 0%, #2388CB 48%, #090B75 100%);
+    /* background-image: url(../assets/banner.png); */
+    background-size:cover;
+}
+
+#foto{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.login{
+    background: #1C6EA4;
+    background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 48%, #090B75 100%);
+    background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 48%, #090B75 100%);
+    background: linear-gradient(to right, #1C6EA4 0%, #2388CB 48%, #090B75 100%);
+}
+
 /* Nav bar */
 .navbar-brand {
     text-decoration: none;
@@ -78,20 +198,25 @@ section.boottom {
     margin: 9px;
     padding: 0;
     float: left;
-    background: url(../images/sprite.png) no-repeat 0 0;
-    width: 236px;
-    height: 32px;
-    text-indent: -2000px;
-    background-position: -200px 0px
+}
+
+
+
+.bg-dark {
+    background-color: #343a40!important;
 }
 
 .isologo {
-    background: url(../images/sprite.png) no-repeat 0 0;
+    /* background: url(../images/sprite.png) no-repeat 0 0; */
     display: inline-block;
     width: 81px;
     height: 32px;
     margin: 9px 0;
     background-position: -355px 0px
+}
+
+.accordion-body{
+    color: #04509a;
 }
 
 .navbar-default {
@@ -388,9 +513,9 @@ section.boottom {
     position: auto;
 }
 
-/** Iconos **/
+* Iconos *
 .icon {
-    background: url(../images/sprite.png) no-repeat 0 0;
+    /* background: url(../images/sprite.png) no-repeat 0 0; */
     display: block;
     width: 90px;
     height: 90px;
@@ -730,14 +855,16 @@ footer .container .row .col-xs-12 .isologo {
     margin: 8px auto
 }
 
+
+
 .social a {
-    background: url(../images/sprite.png) no-repeat 0 0;
+    /* background: url(../images/sprite.png) no-repeat 0 0; */
     display: inline-block;
     width: 48px;
     height: 48px;
     margin: 0 5px;
     text-indent: -9999px;
-    background-color: #3b5998;
+    /* background-color: #3b5998; */
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -832,6 +959,7 @@ footer .container .row .col-xs-12 .isologo {
     .navbar>.container-fluid .navbar-brand {
         margin-left: 0px;
     }
+    
 }
 
 @media only screen and (max-width: 43.813em) {
@@ -853,6 +981,10 @@ footer .container .row .col-xs-12 .isologo {
 
     .flickerplate ul.flicks>li .imagen-proyecto img {
         width: 100%
+    }
+    .margenes{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
