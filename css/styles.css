@@ -504,4 +504,9 @@ footer {
     .social a:hover {
         color: #3498db
     }
+
+    #game {
+        width: auto;
+        height: auto;
+    }
 }
