@@ -164,12 +164,13 @@ section.boottom {
 }
 
 #banner {
-
+    border-radius:20px;
     color: #fff;
+    margin: 10px;
     padding: 60px;
     font-size: 1.2em;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 90px;
     background: #1C6EA4;
     background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 48%, #090B75 100%);
     background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 48%, #090B75 100%);
@@ -179,9 +180,9 @@ section.boottom {
 }
 
 #foto {
-    width: 200px;
-    height: 200px;
-    margin-top: 50px;
+    width: 170px;
+    height: 170px;
+    margin-bottom: -120px;
 }
 
 .login {
@@ -269,7 +270,10 @@ footer .container .row .col-xs-12 .isologo {
         padding-left: 10px;
         padding-right: 10px;
     }
+
 }
+
+
 
 .whatsapp {
     position: fixed;
@@ -489,6 +493,12 @@ footer {
         display: block;
         color: #74808a;
         padding: 10px
+    }
+
+    #foto {
+        width: 150px;
+        height: 150px;
+        margin-left:-30px;
     }
 
     .social a:hover {
