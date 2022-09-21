@@ -2,123 +2,195 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AngelinaNUT</title>
-  <link href="/Portfolio/css/stylesGeli.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AngelinaNUT</title>
+    <!-- <link href="/Portfolio/css/stylesGeli.css" rel="stylesheet"> -->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link href="/css/stylesGeli.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
 </head>
 
 <body>
 
-  <header>
-    <nav>
-      <h1>
-        AngelinaNUT
-      </h1>
-      <ul>
-        <li>
-          <a href="">Inicio</a>
-        </li>
 
-        <li>
-          <a href="">Recetarios</a>
-        </li>
-
-        <li>
-          <a href="">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <div class="container-fluid">
-      <iframe
-        allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin"
-        src="https://www.kapwing.com/e/632a520c0238d1004938b233"
-        style="border:0; overflow:hidden"
-        title="Embedded content made on Kapwing" width="100%">
-      </iframe>
-    </div>
-
-    <!-- ACERCA DE MI -->
-    <div class="about" id="about">
-      <h2>Acerca de mi</h2>
-      <p>Soy la Licenciada en Nutrición Angelina Pérez Viecenz. Blablabla</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit pariatur amet id commodi dicta, eos corrupti
-        mollitia debitis? Ipsum soluta voluptas animi asperiores aspernatur modi aperiam aliquid obcaecati repudiandae
-        illo?</p>
-    </div>
-
-
-
-    <!-- RECETARIOS -->
-    <div class="container">
-      <h2 style="margin-top: 20px;">Recetarios</h2>
-
-      <div class="container">
-
-        <div class="box">
-          <div class="imgBx">
-            <img src="/Portfolio/images/libreGluten.png" alt="MySQL">
-          </div>
-
-          <div class="content">
-            <div>
-              <h2>Recetario</h2>
-              <p>Sin TACC</p>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <h1 class="navbar-brand" href="#">AngelinaNUT</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navegador">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Recetarios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Familiar</a></li>
+                                <li><a class="dropdown-item" href="#">Sin TACC</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
+        </nav>
+        <!--         
+        <nav>
+            <h1>
+                AngelinaNUT
+            </h1>
+            <ul class="navegador">
+                <li>
+                    <a href="">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="">Recetarios</a>
+                </li>
+
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+            </ul> -->
+
+    </header>
+
+
+    <main>
+
+        <!-- VIDEO -->
+        <div class="container-fluid">
+            <iframe allow="autoplay; gyroscope;" allowfullscreen referrerpolicy="strict-origin"
+                src="https://www.kapwing.com/e/632a520c0238d1004938b233" style="overflow:hidden" title="Receta del día"
+                width="100%">
+            </iframe>
         </div>
 
-        <div class="box">
-          <div class="imgBx">
-            <img src="/Portfolio/images/familiar.png" alt="Recetario">
-          </div>
+        <br><br>
+        <!-- ACERCA DE MI -->
+        <div class="container-fluid">
 
-          <div class="content">
-            <div>
-              <h2>Recetario</h2>
-              <p>Familiar</p>
+            <h2>Acerca de mi</h2>
+            <div class="about" id="about">
+                <p>
+                    Soy Angelina Pérez Viecenz, licenciada en nutrición.
+                    Voy a estar subiendo mis videos y diferente contenido para ofrecerles y que así puedan conocerme.
+                    Espero
+                    te guste y no dudes de contactarte conmigo ante cualquier inquietud.
+                </p>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
+
+        <!-- RECETARIOS -->
+        <div class="container-fluid" id="recetario">
+            <h2>Recetarios</h2>
+            <div class="container">
+
+                <div class="box">
+                    <div class="imgBx">
+                        <!-- INTERNET -->
+                        <!-- <img src="/Portfolio/images/libreGluten.png" alt="libreDeGluten"> -->
+                        <!-- DESARROLLO -->
+                        <img src="/images/libreGluten.png" alt="libreDeGluten">
+                    </div>
+
+                    <div class="content">
+                        <div>
+                            <h2>Recetario</h2>
+                            <p>Sin TACC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <!-- INTERNET -->
+                        <!-- <img src="/Portfolio/images/familiar.png" alt="Familiar"> -->
+                        <!-- DESARROLLO -->
+                        <img src="/images/familiar.png" alt="Recetario">
+                    </div>
+
+                    <div class="content">
+                        <div>
+                            <h2>Recetario</h2>
+                            <p>Familiar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- CONTACTO -->
+        <div class="container-fluid">
+            <div class="contacto" id="contacto">
+                <h2>Contacto</h2>
+                <form action="https://formspree.io/f/mvoykjzp" method="POST">
+                    <label>
+                        <p>Su correo:</p>
+                        <input type="email" name="email" title="Debe ser un correo válido"
+                            placeholder="Coloque aquí su email">
+                    </label>
+                    <label>
+                        <p>Mensaje:</p>
+
+                        <textarea name="message" placeholder="Coloque aquí su mensaje"></textarea>
+                    </label>
+                    <!-- your other form fields go here -->
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
 
 
-    <!-- CONTACTO -->
-    <div class="contacto" id="contacto">
-      <h2>Contacto</h2>
-      <form action="https://formspree.io/f/mvoykjzp" method="POST">
-        <label>
-          <p>Su correo:</p>
-          <input type="email" name="email" title="Debe ser un correo válido" placeholder="Coloque aquí su email">
-        </label>
-        <label>
-          <p>Mensaje:</p>
 
-          <textarea name="message" placeholder="Coloque aquí su mensaje"></textarea>
-        </label>
-        <!-- your other form fields go here -->
-        <button type="submit">Send</button>
-      </form>
-    </div>
+    </main>
 
+    <footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="copyright-brief">
+                            <p>Copyright © <a href="http://cpetruzzo.github.io/Portfolio/">AngelinaNUT</a> All right reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="text-right">Realizado por <a href="http://cpetruzzo.github.io/DisenioWeb/" class="dema"
+                                target="_blank">CPetruzzo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-
-  </main>
-
-  <footer>
-
-  </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
 
 </body>
 

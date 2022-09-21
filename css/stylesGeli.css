@@ -9,8 +9,10 @@ h1 {
 }
 
 nav {
+    background-color: slateblue;
+    position: absolute;
     display: flex;
-    background-color: #fff5;
+    background-color: #fff2;
     border-radius: 10px;
     margin: auto;
 }
@@ -21,7 +23,12 @@ ul {
     margin: auto;
 }
 
-nav>ul>li {
+main{
+    display: block;
+    margin: auto;
+}
+
+nav ul li {
     background-color: #fff0;
     display: flex;
     margin: auto;
@@ -43,7 +50,7 @@ a:hover {
 }
 
 
-/* DISEÑO PARA SCROLLVIAJES */
+DISEÑO PARA SCROLLVIAJES
 .scroller {
     margin: 30px auto;
     display: flex;
@@ -106,10 +113,9 @@ a:hover {
 }
 
 body {
-    margin: 0;
     font-family: "Source Sans Pro", sans-serif;
     min-height: 100vh;
-    display: grid;
+    display: block;
     place-content: center;
     text-align: center;
     background-color: #29EEE5;
@@ -148,7 +154,6 @@ header {
 
 .container {
     position: relative;
-    width: 1160px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -159,7 +164,7 @@ header {
 
 .container .box {
     border-radius: 50%;
-
+    display: flex;
     position: relative;
     width: 215px;
     height: 215px;
@@ -297,7 +302,6 @@ form textarea {
 }
 
 form>button {
-    margin: 10px;
     padding: 10px;
     width: 100%;
     border-radius: 20px;
@@ -305,9 +309,12 @@ form>button {
 
 
 iframe {
-    margin-top: 70px;
-    max-width: 700px;
+    display: flex;
+    margin: auto;
+    max-width: 500px;
     min-height: 390px;
+    width: 100%;
+    height: 100%;
     border-radius: 30px;
 }
 
@@ -321,4 +328,26 @@ iframe {
 
 .about p {
     margin: 0px 50px;
+    padding: 10px 5px;
 }
+ 
+@media only screen and (max-width:600px){
+    nav{
+        border-radius: 0%;
+    }
+}
+
+/* @media only screen and (max-width:768px){
+
+}
+
+@media only screen and (max-width:992px){
+
+}
+
+@media only screen and (max-width:1200px){
+    nav{
+        background-color: slateblue;
+    }
+}  */
+
