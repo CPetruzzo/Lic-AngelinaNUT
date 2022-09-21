@@ -330,10 +330,17 @@ iframe {
     margin: 0px 50px;
     padding: 10px 5px;
 }
- 
+
+.dropdown-menu{
+    margin-top: 20px;
+    background-color: #fff2;
+    border: none;
+}
+
 @media only screen and (max-width:600px){
     nav{
         border-radius: 0%;
+        background-color: #fff8;
     }
 }
 
