@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+
+        body {
+            background-color: slateblue;
+            /* display: block; */
+            justify-content: center;
+            margin: auto;
+        }
+
+        .tabla1{
+            display:flex;
+            margin: auto;
+            /* background-color: red; */
+        }
+
+        .todo{
+            margin: 200px;
+            padding: 40px;
+            background-color: yellow;
+            border-radius: 20px;
+            border: 20px solid saddlebrown;
+            
+        }
+
+        button{
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        button:hover{
+            background-color: cadetblue;
+        }
+
+        button:active{
+            background-color: cadetblue;
+        }
+
+    </style>
+    
+    <div class="todo">
+    <h1>Tablas</h1>
+    <div class="tabla1">
+    <table id="tblData">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>john@gmail.com</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Michael Addison</td>
+            <td>michael@gmail.com</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Sam Farmer</td>
+            <td>sam@gmail.com</td>
+            <td>France</td>
+        </tr>
+    </table>
+</div>
+    <br>
+    <table id="tblData2">
+
+        <tr>
+            <td>John Doe</td>
+            <td>john@gmail.com</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Michael Addison</td>
+            <td>michael@gmail.com</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Sam Farmer</td>
+            <td>sam@gmail.com</td>
+            <td>France</td>
+        </tr>
+    </table>
+    <!-- <button onclick="exportTableToExcel('tblData')">Export Table Data To Excel File</button> -->
+    <br><br>
+    <button onclick="exportTableToExcel('tblData', prompt('Ponga el nombre de su archivo'))">Export Table Data To
+        Excel File</button>
+
+    <button onclick="exportTableToExcel('tblData2', prompt('Ponga el nombre de su archivo'))">Export Table Data 2 To
+        Excel File</button>
+    </div>
+
+    <script>
+        function exportTableToExcel(tableID, filename = '') {
+            var downloadLink;
+            var dataType = 'application/vnd.ms-excel';
+            var tableSelect = document.getElementById(tableID);
+            var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+
+            // Specify file name
+            filename = filename ? filename + '.xls' : 'excel_data.xls';
+
+            // Create download link element
+            downloadLink = document.createElement("a");
+
+            document.body.appendChild(downloadLink);
+
+            if (navigator.msSaveOrOpenBlob) {
+                var blob = new Blob(['ufeff', tableHTML], {
+                    type: dataType
+                });
+                navigator.msSaveOrOpenBlob(blob, filename);
+            } else {
+                // Create a link to the file
+                downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+
+                // Setting the file name
+                downloadLink.download = filename;
+
+                //triggering the function
+                downloadLink.click();
+            }
+        }
+    </script>
+</body>
+
+</html>
